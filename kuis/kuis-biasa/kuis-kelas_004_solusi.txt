@@ -1,0 +1,96 @@
+1. Apa yang dilakukan fungsi ini (dijamin tidak ada error :-), asumsi parameter x bertipe string?
+
+def f(x):
+    y = 0
+    for e in x:
+        y += 2
+    return y
+
+	
+	
+	
+
+2. Diketahui bilangan biner 1111. Konversi ke (a) bilangan basis 10; dan (b) bilangan hexadecimal (basis 16)
+
+
+
+
+
+
+
+
+
+3. Buatlah fungsi cek_genap(x) untuk mengecek apakah suatu int x itu genap.
+
+
+
+
+
+
+
+
+
+4. Apa yang dicetak oleh program berikut.
+
+print("aku suka ddp"[1::3])
+
+
+
+
+
+
+
+
+
+
+5. Diketahui file teks "tes.txt" yang isinya "DDP ok\n". Apa yang tertulis pada "tes.txt" setelah program ini dijalankan (asumsi program tersebut terletak di folder yang sama dengan "tes.txt").
+
+berkas = open("tes.txt", "w")
+print("Nguis DDP kuy", file=berkas)
+berkas.close()
+berkas = open("tes.txt", "a")
+print("Nguis DDP kuy", file=berkas)
+berkas.close()
+
+BONUS.
+
+Apa yang dicetak program ini (atau apakah ada error):
+
+x = 0
+if 1 <= x+1 <= 1:
+    y = 1
+else:
+    z = 2
+
+try:
+    z = z + 2
+    print(z)
+except NameError:
+    print(z)
+
+-----------------
+JAWABAN DI BAWAH:
+-----------------
+
+1. Menghitung panjang string x dikali 2 (= len(x) * 2)
+
+2. 15 dan F
+
+3.
+
+def cek_genap(x):
+    if x % 2 == 0:
+        return True
+    else:
+        return False
+
+4. ksad
+
+5.
+Nguis DDP kuy
+Nguis DDP kuy
+
+
+BONUS.
+
+Ada Error NameError (perhatikan, di dalam suite/blok except, dilakukan print(z) padahal variable z tidak mendapat diassign nilai apapun)

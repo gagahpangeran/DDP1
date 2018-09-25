@@ -1,0 +1,49 @@
+1. Apa yang dicetak potongan kode berikut (atau apakah ada error):
+
+x = "1"
+y = x + 1
+print(y)
+
+2. Apa yang dicetak potongan kode berikut (atau apakah ada error):
+
+x = "1"
+y = x + "1"
+print(y)
+
+3. Apa yang dicetak potongan kode berikut (atau apakah ada error):
+
+x = 1.0
+y = x + 1
+print(y)
+
+4. Pilih jawaban yang tepat
+		| RAM          | Hard Drive
+--------------------------------------
+Ukuran  | Besar/Kecil  | Besar/Kecil
+Akses   | Cepat/Lambat | Cepat/Lambat
+
+5. Aspek apakah yang bermasalah dari potongan kode berikut, sintaks atau semantik?
+
+print(1
+
+BONUS. Apa yang dicetak potongan kode berikut (atau apakah ada error):
+
+x = "1"
+y = x + str(1)
+print(y)
+
+Solusi:
+
+1. TypeError: must be str, not int
+2. 11
+3. 2.0
+4.
+
+		| RAM          | Hard Drive
+--------------------------------------
+Ukuran  | Kecil        | Besar
+Akses   | Cepat        | Lambat
+
+5. Sintaks
+
+BONUS. 11 // The str() function converts values to a string form so they can be combined with other strings.

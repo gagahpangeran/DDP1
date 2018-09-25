@@ -1,0 +1,70 @@
+1.
+
+NameError: name 'z' is not defined
+
+2.
+
+8
+
+3.
+
+True
+False
+False
+True
+15
+
+4.
+
+I hate spam.
+Me too.
+Me too.
+
+5.
+
+class Pet:
+
+    def __init__(self, nama):
+        self.nama = nama
+
+    def say_hello(self):
+        print("Hello, I am " + self.nama + "!")
+
+6.
+
+type dan isinstance
+
+7.
+
+class Animal:
+    pass
+
+class Cat(Animal):
+    pass
+
+class Cymric(Cat):
+    pass
+
+class Devon(Cat):
+    pass
+
+class Persian(Cat):
+    pass
+
+class Fish(Animal):
+    pass
+
+class Koi(Fish):
+    pass
+
+class Goromo(Koi):
+    pass
+
+8.
+
+- Bound terikat ke instance, unbound ke class
+- Bound tidak perlu pass self secara eksplisit, unbound perlu pass 'self' secara eksplisit (= instance yang akan menjadi self)
+
+9.
+
+object

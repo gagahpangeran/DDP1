@@ -1,0 +1,340 @@
+1. Perhatikan kode berikut, apa keluarannya apabila pengguna memasukkan 3, dan selanjutnya 5?
+
+a = input()
+b = input()
+print(a + b)
+
+2. Perhatikan kode berikut, apa keluarannya apabila pengguna memasukkan 3?
+
+a = input()
+print(a * 5)
+
+3. Buat program yang meminta masukan 3 angka dan mencetak jumlahnya.
+
+4. Apa yang dicetak kode berikut.
+
+print(18//5/2//1)
+
+5. Buat fungsi maksimum(w, x, y, z) yang menerima masukan 4 ints dan mengembalikan nilai maksimum dari keempat nilai tersebut. Tidak boleh pakai built-in functions max dan min.
+
+6. Given the integer N - the number of minutes that is passed since midnight - how many hours and minutes are displayed on the 24h digital clock?
+
+The program should print two numbers: the number of hours (between 0 and 23) and the number of minutes (between 0 and 59). Assume that the minutes given never exceed 23 hours and 59 minutes.
+
+For example, if N = 150, then 150 minutes have passed since midnight - i.e. now is 2:30 am. So the program should print "2 30" (the quotes are not printed).
+
+7. Apa yang dicetak oleh kode berikut.
+
+print(print("RDF"))
+
+8. Buat fungsi yang mengembalikan digit terakhir dari suatu angka.
+
+9. Buat fungsi yang mengembalikan bagian pecahan dari suatu angka real/float. Contoh: f(7.25) mengembalikan 0.25.
+
+10. Apa yang dicetak kode berikut.
+
+result = 0
+n = 5
+for i in range(1, n + 1):
+    result += i
+print(result)
+
+11. Buat fungsi untuk mencetak tangga sebanyak N anak tangga dengan kriteria berikut.
+
+Untuk N = 1, cetak:
+
+------
+|    |
+
+Untuk N = 2, cetak:
+
+------
+|    |
+------
+|    |
+
+Untuk N = 3, cetak:
+
+------
+|    |
+------
+|    |
+------
+|    |
+
+Dan seterusnya.
+
+12. Apa yang dicetak oleh kode berikut (atau apakah ada error).
+
+a. print("Hello".find("l"))
+b. print("Hello".find("l").find("l"))
+
+13. Given a string consisting of exactly two words separated by a space. Print a new string with the first and second word positions swapped (the second word is printed first).
+
+This task should not use loops and if.
+
+Example output for input "ddp ok": "ok ddp"
+
+14. Given a string that may or may not contain the letter of interest. Print the index location of the second occurrence of the letter 'f'. If the string contains the letter 'f' only once, then print -1, and if the string does not contain the letter 'f', then print -2. Do not use loops.
+
+Example output for input "fariz": -1
+Example output for input "fufufufu": 2
+
+15. Given a string. Delete from it all the characters whose indices are even.
+
+16. For a given integer N >= 1, print all the squares of integer numbers where the square is less than or equal to N, in ascending order. 
+
+17. Minta input barisan bilangan "x1 x2 x3 ... xn" dimana x1 sampai dengan xn merupakan integer, dan kemudian hitung rata-ratanya.
+
+Contoh input:
+5 10 1 2 3
+Contoh output
+4.2
+
+18. Minta input barisan bilangan "x1 x2 x3 ... xn" dimana x1 sampai dengan xn merupakan integer, dan kemudian hitung berapa angka yang lebih besar dari angka yang tepat di sebelah kanannya.
+
+Contoh input:
+5 10 1 3 2
+
+Contoh output
+2
+
+19. Apa yang dicetak:
+
+a = ['red', 'green', 'blue']
+print(' '.join(a))
+print(''.join(a))
+print('***'.join(a))
+
+20. Apa yang dicetak:
+
+print('\\'.join([str(i) for i in range(1,10,2) if i + 1 > 3][1::1]))
+
+21. Apa yang dicetak:
+
+a = [[1, 2, 3], [4, 5, 6]]
+a[0][1] = [1,2,3]
+a[1] = [5,6,7]
+a.extend([1,2])
+a.remove(1)
+print(a)
+
+22. Buat fungsi flatten(x) dimana x adalah list of lists, yang mengembalikan suatu list yang berisi elemen-elemen dari lists di dalam list tersebut.
+
+Contoh, flatten([[1], [2,3]]) akan mengembalikan [1,2,3].
+
+23. Apa yang dicetak:
+
+print('\n'.join(['*' * i for i in range(1,6)]))
+
+24. Buatlah fungsi balik_case(s) dimana s adalah string yang mengubah huruf besar di s menjadi huruf kecil, dan sebaliknya.
+
+Contoh: balik_case("Aku Rapopo") akan mengembalikan "aKU rAPOPO".
+
+Petunjuk: Boleh pakai method upper(), lower(), isupper(), dan islower().
+
+25. Buat fungsi yang menerima masukan list integer (asumsi integernya >= 0) dan mencari berapa banyak elemen dengan nilai yang sama dengan nilai maksimum di list tersebut. Batasan: Hanya boleh ada satu loop (baik for maupun while)!
+
+Contoh output apabila argument listnya [8,2,9,1,9,9]: 3 (karena elemen maksimal 9 dan muncul 3 kali)
+
+26. Apa yang dicetak:
+
+def g(n):
+
+	print("-"*n*3)
+	for i in range(n):
+	    print("|" + " "*(n*3-2) + "|")
+	print("-"*n*3)
+	
+g(3)
+
+=============
+KUNCI JAWABAN
+=============
+
+1. 35
+2. 33333
+3.
+
+x = int(input())
+y = int(input())
+z = int(input())
+
+print(x + y + z)
+
+4. 1.0
+5.
+
+def maksimum(w, x, y, z):
+    
+    if w >= x and w >= y and w >= z:
+        return w
+    elif x >= w and x >= y and x >= z:
+        return x
+    elif y >= w and y >= x and y >= z:
+        return y
+    else:
+        return z
+		
+# untuk tes
+print(maksimum(1,9,9,23))
+print(maksimum(23,9,9,1))
+print(maksimum(23,99,9,1))
+
+6.
+
+n = int(input())
+hours = n // 60
+minutes = n % 60
+print(hours, minutes)
+
+7.
+
+RDF
+None
+
+8.
+
+def cetak_digit_terakhir(x):
+    return x % 10
+	
+9.
+
+def cetak_pecahan(x):
+    return x - (x // 1)
+	
+10.
+
+15
+
+11.
+
+def gambar_tangga(n):
+    for i in range(n):
+        print("------")
+        print("|    |")
+
+12.
+
+a. 2
+b. AttributeError: 'int' object has no attribute 'find'
+
+13.
+
+s = input()
+first_word = s[:s.find(' ')]
+second_word = s[s.find(' ') + 1:]
+print(second_word + ' ' + first_word)
+
+14.
+
+s = input()
+index_first_f = s.find("f")
+if index_first_f == -1:
+    print(-2)
+else:
+    s = s[index_first_f+1:]
+    if s.find("f") == -1:
+        print(-1)
+    else:
+        print(s.find("f") + index_first_f + 1)
+
+15.
+
+s=input()
+s_output = ""
+for i in range(len(s)):
+    if i % 2 == 0:
+        s_output = s_output + s[i]
+print(s_output)
+
+16.
+
+n = int(input())
+i = 1
+while (i ** 2) <= n:
+    print(i ** 2)
+    i += 1
+	
+17.
+
+barisan_angka = input()
+list_angka = barisan_angka.split(" ")
+sum = 0
+for angka in list_angka:
+	sum += int(angka)
+print("Rata-rata:",(sum/len(list_angka)))
+
+18.
+
+barisan_angka = input()
+list_angka = barisan_angka.split(" ")
+jumlah_angka = 0
+for i in range(len(list_angka)-1):
+	if int(list_angka[i]) > int(list_angka[i+1]):
+	    jumlah_angka += 1
+print(jumlah_angka)
+
+19.
+
+red green blue
+redgreenblue
+red***green***blue
+
+20.
+
+5\7\9
+
+21.
+
+[[1, [1, 2, 3], 3], [5, 6, 7], 2]
+
+22.
+
+def flatten(x):
+	a_list = []
+	for e in x:
+		a_list.extend(e)
+	return a_list
+
+23.
+
+*
+**
+***
+****
+*****
+
+24.
+
+def balik_case(s):
+	s_baru = ""
+	for char in s:
+		if char.isupper():
+			s_baru = s_baru + char.lower()
+		elif char.islower():
+			s_baru = s_baru + char.upper()
+		else:
+			s_baru = s_baru + char
+	return s_baru
+	
+25.
+
+def frekuensi_maksimum(a_list):
+	frekuensi_maksimum = 0
+	elemen_maksimum = -1
+	for i in a_list:
+		if i > elemen_maksimum:
+			elemen_maksimum = i
+			frekuensi_maksimum = 1
+		elif i == elemen_maksimum:
+			frekuensi_maksimum += 1
+	return frekuensi_maksimum
+	
+26.
+
+---------
+|       |
+|       |
+|       |
+---------

@@ -1,0 +1,147 @@
+Contoh UTS untuk Topik Python Expressions, Lists, Mutability, Control (Selection and Repetition), Function
+
+Catatan: Topik nantinya tetap akan mencakup semua yang telah diajarkan.
+
+1. (Python Expressions) Apa yang dicetak (atau apakah ada error)?
+
+a. print(4.0 + 5 * 6)
+
+b. print((2 + 1) * "1")
+
+2. (Lists) Apa yang dicetak (atau apakah ada error)?
+
+a.
+  
+a = [1, 2]
+b = []
+b = b + a
+b = b + a
+a.append(3)
+print(b)
+
+b.
+
+a = [1, 2]
+b = []
+b.append(a)
+b.append(a)
+a.append(3)
+print(b)
+
+c.
+
+lst = [1, 2, 3]
+myvar = lst[0]
+lst[0] = 18
+print(lst)
+print(myvar)
+
+d.
+
+myvar = 18
+lst = [myvar, 2, 3]
+myvar = 22
+print(lst)
+print(myvar)
+
+3. (Mutability) Apa yang dicetak (atau apakah ada error)?
+
+a.
+
+buah = ("arancia", "mela")
+buah[1] = "banana"
+print(buah)
+
+b.
+
+angka = [[1,3], [2]]
+angka[0][1] = [2]
+print(angka)
+
+4. (Control) Apa yang dicetak (atau apakah ada error)?
+
+a.
+
+for x in [1,2]:
+  for y in [3,x]:
+    print(x,y)
+
+b.
+x = 3
+while x > 0:
+    while x > 0:
+	    print(x)
+	    x -= 1
+    else:
+	    print(x)
+	
+5. (Function) Apa yang dicetak (atau apakah ada error)?
+
+a.
+
+bar = 1
+def foo():
+  bar = 2
+  foo = 3
+  return bar
+foo()
+print(foo())
+print(bar)
+
+b.
+
+bar = 1
+def foo():
+  bar = 2
+  foo = 3
+  return bar
+foo()
+print(x)
+print(bar)
+
+========
+Jawaban:
+========
+
+1.
+a. 34.0
+b. 111
+
+2.
+a. [1, 2, 1, 2]
+b. [[1, 2, 3], [1, 2, 3]]
+c.
+[18, 2, 3]
+1
+d.
+[18, 2, 3]
+22
+
+3.
+
+a. TypeError
+b. [[1, [2]], [2]]
+
+4.
+
+a.
+1 3
+1 1
+2 3
+2 2
+
+b.
+3
+2
+1
+0
+
+5.
+
+a.
+2
+1
+
+b.
+
+NameError

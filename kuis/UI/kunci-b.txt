@@ -1,0 +1,72 @@
+1.
+
+6
+
+2.
+
+NameError
+
+3.
+
+False
+True
+True
+False
+12
+
+4.
+
+UnboundLocalError: local variable 's' referenced before assignment
+
+5.
+
+class Robot:
+
+    def __init__(self, name):
+        self.name = name   
+        
+    def say_hi(self):
+        print("Hi, I am " + self.name + "!")
+		
+6.
+
+__str__ atau __repr__
+
+7.
+
+tambahkan __ sebelum nama variable-nya
+
+8.
+
+class Animal:
+    pass
+
+class Cat(Animal):
+    pass
+
+class Cymric(Cat):
+    pass
+
+class Devon(Cat):
+    pass
+
+class Persian(Cat):
+    pass
+
+class Fish(Animal):
+    pass
+
+class Koi(Fish):
+    pass
+
+class Goromo(Koi):
+    pass
+
+9.
+
+- Bound terikat ke instance, unbound ke class
+- Bound tidak perlu pass self secara eksplisit, unbound perlu pass 'self' secara eksplisit (= instance yang akan menjadi self)
+
+10.
+
+object

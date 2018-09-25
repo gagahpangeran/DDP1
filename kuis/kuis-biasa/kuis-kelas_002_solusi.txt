@@ -1,0 +1,64 @@
+1. Berapakah angka desimal dari angka biner 01001011?
+
+- 75
+
+Cara pengerjaan:
+
+1 * 2^0 + 1 * 2^1 + 1 * 2^3 + 1 * 2^6 =
+1 + 2 + 8 + 64 = 75
+
+2. Berapakah angka biner dari angka desimal 5.5?
+
+- 101.1
+
+Cara pengerjaan:
+5/2 = 2 REM 1
+2/2 = 1 REM 0
+1/2 = 0 REM 1
+
+Dibaca nilai sisanya (REM) dari bawah ke atas, menjadi 101.
+
+Sedangkan untuk bagian pecahan:
+0.5 * 2 = 1.0
+
+Dibaca nilai bulat dari atas ke bawah, menjadi 1.
+
+Menggabungkan bagian bulat dan pecahan, menjadi: 101.1
+
+3. Berapakah angka hex dari angka biner 10111100?
+
+- BC
+
+Cara pengerjaan:
+
+10111100, dipecah empat-empat, menjadi:
+1011 dan 1100.
+
+Sedangkan, nilai desimal dari 1011 adalah 11 (atau B di hex), dan 1100 adalah 12 (atau C di hex). Maka, nilai hexnya adalah: BC
+
+4. Berapakah angka desimal dari angka hex 2D?
+
+- 45
+
+Cara pengerjaan:
+
+D * 16^0 = 13 // ingat, D hex = 13 desimal
+2 * 16^1 = 32
+-------------+
+         = 45
+
+5. Konversi angka desimal -4 ke angka biner two's complement (jumlah digit ada 4)?
+
+- 1100
+
+Cara pengerjaan:
+
+4 desimal di dalam biner = 0100
+
+Lalu, bitsnya diflip, ditambah 1, menjadi: 1100
+
+BONUS.
+
+Bagaimana cara untuk mengetahui apakah suatu angka biner itu ganjil atau genap? Petunjuk: Bergantung dari angka digit terakhir.
+
+- An even number will always end in zero when represented in binary. This is because there is zero in the single units column.
